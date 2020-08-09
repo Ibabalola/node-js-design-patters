@@ -15,21 +15,21 @@
  const people = [];
 
  // Employees
- const isaac    = new PersonBuilder('Isaac').makeEmployee().makeManager(60).build(); 
- const theresa  = new PersonBuilder('Theresa').makeEmployee().makePartTime().build();
- const jacob    = new PersonBuilder('Jacob').makeEmployee().build();
+ const isaac = new PersonBuilder('Isaac').makeEmployee().makeManager(60).build(); 
+ const theresa = new PersonBuilder('Theresa').makeEmployee().makePartTime().build();
+ const jacob = new PersonBuilder('Jacob').makeEmployee().build();
 
  people.push(isaac);
  people.push(theresa);
  people.push(jacob);
 
  // Shopper
- const yaya     = new PersonBuilder('Yaya')
+ const yaya = new PersonBuilder('Yaya')
     .withMoney(500)
     .withList(['jeans', 'sunglasses'])
     .build();
 
- const zara     = new PersonBuilder('zara')
+ const zara = new PersonBuilder('zara')
     .withMoney()
     .build();
 
