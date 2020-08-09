@@ -6,7 +6,7 @@ class Shopper {
     }
 
     toString() {
-        return `Shopper: ${this._name} has £${this._money}`;
+        return JSON.stringify(this);
     }
 }
 

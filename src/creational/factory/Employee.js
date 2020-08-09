@@ -11,7 +11,7 @@ class Employee {
     }
 
     toString() {
-        return `Employee: ${this._name} has £${this._money} and currently works for ${this._employer}`;
+        return JSON.stringify(this);
     }
 
 }
