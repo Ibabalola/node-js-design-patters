@@ -18,15 +18,13 @@
  * original object.
  * 
  * Example: Proxy (Object) that will control access to the file system
+ * the proxy emulates the interface of actual fs module 
+ * however has additional functionailty 
+ * to guard the fs module reading txt files
  */
 
 const path = require('path');
-const FS_Proxy = require('./FS_Proxy');
-
-// the proxy emulates the interface of actual fs module 
-// however has additional functionailty 
-// to guard the fs module reading txt files
-const fs = new FS_Proxy(require('fs'));
+const fs = require('./FS_Proxy');
 
 const txtFile = path.join(__dirname, 'Readme.txt');
 const mdFile = path.join(__dirname, 'Readme.md');

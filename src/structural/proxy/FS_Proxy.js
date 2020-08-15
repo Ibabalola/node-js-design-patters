@@ -1,3 +1,4 @@
+const fs = require('fs')
 class FS_Proxy {
 
     constructor(fs_subject) {
@@ -32,4 +33,4 @@ class FS_Proxy {
 
 }
 
-module.exports = FS_Proxy;
+module.exports = new FS_Proxy(fs);
