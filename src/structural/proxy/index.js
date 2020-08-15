@@ -25,7 +25,7 @@ const FS_Proxy = require('./FS_Proxy');
 
 // the proxy emulates the interface of actual fs module 
 // however has additional functionailty 
-// guard the reading of the txt file
+// to guard the fs module reading txt files
 const fs = new FS_Proxy(require('fs'));
 
 const txtFile = path.join(__dirname, 'Readme.txt');
